@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HI-Speak Homepage</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../lab/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
-<body>
-    
+
+<body id='mainbody'>
+    <div id='baseDiv'>
+        <h1>HI-Speak</h1>
+        <div id='buttonDiv'>
+            <button type="button" id='words' name='words' class='bsbutton'>Memory Words</button>
+            <button type="button" id='speeches' name='speeches' class='bsbutton'>Practice Speeches</button>
+            <button type="button" id='assignments' name='assignments' class='bsbutton'>Finish Assignments</button>
+            <button type="button" id='robot' name='robot' class='bsbutton'>Clever Robot</button>
+        </div>
+        <div id='wordsDiv'>
+            <img id='forgetting-curve_img' src="../img/forgetting-curve.jpg" alt="Forgetting Curve">
+            <button type="button" id='curRound' name='curRound' class='bsbutton'>Current Round</button>
+            <button type="button" id='newRound' name='newRound' class='bsbutton'>Add New Round</button>
+            <button type="button" class='backbutton'>Back</button>
+        </div>
+        <div id='speechesDiv'></div>
+        <div id='assignmentsDiv'></div>
+        <div id='robotDiv'></div>
+    </div>
+    <script src="../js/myscript.js"></script>
 </body>
+
 </html>
